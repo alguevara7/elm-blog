@@ -1,4 +1,4 @@
-# a simple Blog in Elm - [Try It!](http://zb0th.github.io/elm-blog)
+# a simple Blog in Elm - [~~Try It!~~](http://zb0th.github.io/elm-blog)
 
 All of the Elm code lives in `Blog.elm` and relies on the [elm-lang/html][html] library. 
 
