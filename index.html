@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Elm - Blog</title>
+  <script type="text/javascript" src="elm.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+</body>
+
+<script type="text/javascript">
+var storedState = localStorage.getItem('elm-blog-state');
+var startingState = storedState ? JSON.parse(storedState) : null;
+var blog = Elm.Blog.fullscreen(startingState);
+blog.ports.setStorage.subscribe(function(state) {
+    localStorage.setItem('elm-blog-state', JSON.stringify(state));
+});
+</script>
+
+</html>
